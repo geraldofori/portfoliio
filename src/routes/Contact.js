@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Topbar from '../components/Topbar'
+import Footer from '../components/Footer'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Topbar/>
+      <Footer/>
+    </div>
   )
 }
 

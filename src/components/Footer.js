@@ -25,13 +25,14 @@ const Footer = () => {
                     oforige@icloud.com</h4>
                 </div>
             </div>
-            <div className="right"></div>
-            <h4>About</h4>
-            <p>Hi there, I'm Gerald Ofori. A software engineer who speciliazes not only in frontend development but can work as a backend developer as well.</p>
-            <div className="socials">
-            <FaFacebook size={30} style={{color:"#fff", marginRight: "1rem"}}/>
-            <FaTwitter size={30} style={{color:"#fff", marginRight: "1rem"}}/>
-            <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}}/>
+            <div className="right">
+                <h4>About</h4>
+                <p>Hi there, I'm Gerald Ofori. A software engineer who speciliazes not only in frontend development but can work as a backend developer as well.</p>
+                <div className="socials">
+                    <FaFacebook size={30} style={{color:"#fff", marginRight: "1rem"}}/>
+                    <FaTwitter size={30} style={{color:"#fff", marginRight: "1rem"}}/>
+                    <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}}/>
+                </div>
             </div>
         </div>
     </div>
