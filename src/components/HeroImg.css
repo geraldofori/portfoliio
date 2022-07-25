@@ -41,6 +41,11 @@
     font-size: 4rem;
     padding: 0.6rem p 1.5rem;
 }
+.hero .content h2{
+    color: aliceblue;
+    padding: 0.4rem p 1.2rem;
+
+}
 
 .hero .content p{
     font-size: 1.5rem;
