@@ -10,6 +10,10 @@ const WorkCard = () => {
             <div className="project-card">
                 <img src={alphaprep} alt=""/>
                 <h2 className="project-title">AlphaPrep</h2>
+                <div className="pro-details">
+                    <p>This is the project description</p>
+                    <div className="pro-btns"></div>
+                </div>
             </div>
         </div>
 
