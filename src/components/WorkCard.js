@@ -1,6 +1,7 @@
 import "./WorkCard.css";
 import React from 'react';
 import alphaprep from "../assets/alphaprep.png";
+import { NavLink } from "react-router-dom";
 
 const WorkCard = () => {
   return (
@@ -12,7 +13,10 @@ const WorkCard = () => {
                 <h2 className="project-title">AlphaPrep</h2>
                 <div className="pro-details">
                     <p>This is the project description</p>
-                    <div className="pro-btns"></div>
+                    <div className="pro-btns">
+                      <NavLink to="github.com" className="btn">View</NavLink>
+                      <NavLink to="github.com" className="btn">Source</NavLink>
+                    </div>
                 </div>
             </div>
         </div>
