@@ -1,18 +1,18 @@
 import "./WorkCard.css";
 import React from 'react';
-import alphaprep from "../assets/alphaprep.png";
+// import alphaprep from "../assets/alphaprep.png";
 import { NavLink } from "react-router-dom";
 
-const WorkCard = () => {
+const WorkCard = (props) => {
   return (
     <div className="project-card">
-      <img src={alphaprep} alt=""/>
-      <h2 className="project-title">AlphaPrep</h2>
+      <img src={props.imgsrc} alt=""/>
+      <h2 className="project-title">{props.title}</h2>
       <div className="pro-details">
-          <p>This is the project description</p>
+          <p>{props.text}</p>
           <div className="pro-btns">
-            <NavLink to="https://github.com" className="btn">View</NavLink>
-            <NavLink to="https://github.com" className="btn">Source</NavLink>
+            <NavLink to={props.view} className="btn">View</NavLink>
+            <NavLink to={props.source} className="btn">Source</NavLink>
           </div>
       </div>
     </div>
