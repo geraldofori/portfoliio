@@ -1,7 +1,7 @@
 import React from 'react'
 import Topbar from '../components/Topbar'
 import HeroImg from '../components/HeroImg'
-import Work from '../components/Work'
+// import Work from '../components/Work'
 import Footer from '../components/Footer'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Topbar/>
       <HeroImg/>
-      <Work/>
+      {/* <Work/> */}
       <Footer/>
     </div>
   )
