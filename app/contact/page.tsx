@@ -5,9 +5,9 @@ import { CopyEmail } from "@/components/CopyEmail"
 import archSpaceImg from "@/public/images/architecture-space.jpg"
 
 const socialLinks = [
-  { label: "LinkedIn", href: "#" },
-  { label: "GitHub", href: "#" },
-  { label: "Read.cv", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/gerald-ofori-86b847169" },
+  { label: "GitHub", href: "https://github.com/geraldofori" },
+  { label: "CV", href: "#" },
 ] as const
 
 export default function Contact() {

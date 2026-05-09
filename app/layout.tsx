@@ -16,7 +16,7 @@ const newsreader = Newsreader({
 })
 
 export const metadata: Metadata = {
-  title: "Gerald Bosu Ofori — Software Engineer & Architect",
+  title: "Gerald Ofori — Software Engineer & Architect",
   description:
     "Building minimalist, high-performance systems for deep thought. Software engineer and architect based in Accra, building globally.",
 }

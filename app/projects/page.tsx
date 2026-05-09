@@ -2,11 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { projects } from "@/lib/projects"
-import citizenAppImg from "@/public/images/citizen-app.jpg"
-import myCreditScoreImg from "@/public/images/mycreditscore.jpg"
-import nlcbcImg from "@/public/images/nlcbc.jpg"
-
-const projectImages = [citizenAppImg, myCreditScoreImg, nlcbcImg]
 
 export default function Projects() {
   return (
@@ -35,19 +30,22 @@ export default function Projects() {
                   {project.desc}
                 </p>
                 <Link
-                  href="#"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-semibold text-xs tracking-widest uppercase border-b border-current pb-1 hover:text-secondary transition-all"
                 >
                   View live project <ArrowUpRight size={14} />
                 </Link>
               </div>
               <div
-                className={`${i % 2 === 0 ? "order-1 md:order-2" : "order-1"} ${project.aspect} overflow-hidden rounded-sm group bg-surface-container-high`}
+                className={`relative ${i % 2 === 0 ? "order-1 md:order-2" : "order-1"} ${project.aspect} overflow-hidden rounded-sm group bg-surface-container-high`}
               >
                 <Image
-                  src={projectImages[i]}
+                  src={`https://api.microlink.io/?url=${project.url}&screenshot=true&embed=screenshot.url`}
                   alt={project.title}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                 />
               </div>
             </div>

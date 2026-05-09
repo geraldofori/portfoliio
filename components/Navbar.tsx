@@ -17,7 +17,7 @@ export function Navbar() {
           href="/"
           className="text-2xl font-bold tracking-tighter text-on-surface dark:text-dark-on-surface"
         >
-          {darkMode ? 'ARCHITECT.LOG' : 'Gerald Bosu Ofori'}
+          Gerald  Ofori
         </Link>
 
         <div className="hidden md:flex items-center gap-10">

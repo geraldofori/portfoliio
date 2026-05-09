@@ -1,5 +1,5 @@
-export const EMAIL = "hello@geraldofori.com"
-export const NAME = "Gerald Bosu Ofori"
+export const EMAIL = "oforige@gmail.com"
+export const NAME = "Gerald Ofori"
 export const TAGLINE = "Software Engineer & Architect"
 
 export const NAV_ITEMS = [
@@ -9,8 +9,8 @@ export const NAV_ITEMS = [
 ] as const
 
 export const SOCIAL_LINKS = [
-  { label: "LinkedIn", href: "#" },
-  { label: "GitHub", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/gerald-ofori-86b847169" },
+  { label: "GitHub", href: "https://github.com/geraldofori" },
   { label: "Email", href: `mailto:${EMAIL}` },
-  { label: "Read.cv", href: "#" },
+  { label: "CV", href: "#" },
 ] as const

@@ -40,7 +40,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-xl items-end">
             <div className="md:col-span-7">
               <span className="text-xs font-semibold uppercase tracking-widest mb-4 block text-secondary dark:text-dark-primary">
-                System Architect
+                Software Architect
               </span>
               <h1 className="text-6xl font-headline mb-8">Gerald Bosu Ofori.</h1>
               <p className="text-xl font-body text-on-surface-variant dark:text-dark-on-surface leading-relaxed italic mb-8 opacity-80">
