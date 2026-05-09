@@ -62,7 +62,7 @@ Ensure you have the following installed on your machine:
 The portfolio dynamically showcases real-world projects such as:
 - **Citizen App** ([citizen.gov.gh](https://citizen.gov.gh/)) - A decentralized governance portal.
 - **myCreditScore** ([mycreditscore.com.gh](https://mycreditscore.com.gh/)) - A complex financial metrics dashboard.
-- **NLCBC Website** ([nlcbcgh.com](https://www.nlcbcgh.com/)) - Official digital presence for the National Laboratory of Cell Biology.
+- **NLCBC** ([nlcbcgh.com](https://www.nlcbcgh.com/)) - Official digital presence for the NewLife Community Baptist Church.
 
 ## 📄 License
 
