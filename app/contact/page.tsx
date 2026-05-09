@@ -17,7 +17,7 @@ export default function Contact() {
         <h1 className="text-5xl md:text-7xl font-headline mb-6 text-on-surface dark:text-dark-on-surface">
           Let&apos;s Collaborate
         </h1>
-        <p className="text-xl text-on-surface-variant dark:text-dark-on-surface max-w-lg">
+        <p className="text-xl text-on-surface-variant dark:text-dark-on-surface max-w-[36rem] opacity-70">
           Currently seeking opportunities to build meaningful digital experiences and deliberate
           design systems.
         </p>
@@ -31,7 +31,7 @@ export default function Contact() {
           className="group border p-lg flex flex-col justify-between h-[240px] transition-all hover:translate-y-[-4px] hover:border-secondary bg-surface-container border-outline-variant dark:bg-[#221f1d] dark:border-[#3d4947]"
         >
           <div className="flex justify-between items-start">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface opacity-60">
               Address Book
             </span>
             <Download
@@ -43,7 +43,7 @@ export default function Contact() {
             <h2 className="text-2xl font-headline mb-1 text-on-surface dark:text-dark-on-surface">
               Save Contact
             </h2>
-            <p className="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant dark:text-dark-on-surface">
+            <p className="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant dark:text-dark-on-surface opacity-40">
               Download vCard (.vcf)
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Contact() {
       </div>
 
       <section className="border-t border-outline-variant pt-xl mb-xxl">
-        <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface block mb-8">
+        <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface opacity-40 block mb-8">
           Digital Presence
         </span>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-md">

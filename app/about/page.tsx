@@ -43,7 +43,7 @@ export default function About() {
                 System Architect
               </span>
               <h1 className="text-6xl font-headline mb-8">Gerald Bosu Ofori.</h1>
-              <p className="text-xl font-body text-on-surface-variant dark:text-dark-on-surface leading-relaxed italic mb-8">
+              <p className="text-xl font-body text-on-surface-variant dark:text-dark-on-surface leading-relaxed italic mb-8 opacity-80">
                 Engineering digital frameworks with structural integrity and cinematic precision. I
                 build systems that don&apos;t just function&mdash;they endure.
               </p>
@@ -71,7 +71,7 @@ export default function About() {
                   <h3 className="text-xs font-semibold uppercase tracking-widest mb-2 text-secondary dark:text-dark-primary">
                     {p.title}
                   </h3>
-                  <p className="text-on-surface-variant dark:text-dark-on-surface leading-relaxed text-sm">
+                  <p className="text-on-surface-variant dark:text-dark-on-surface leading-relaxed text-sm opacity-70">
                     {p.desc}
                   </p>
                 </div>
@@ -101,7 +101,7 @@ export default function About() {
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface">
+              <h2 className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface opacity-60">
                 Extracurricular Pursuits
               </h2>
               {pursuits.map((p) => (

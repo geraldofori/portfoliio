@@ -11,9 +11,9 @@ const projectImages = [citizenAppImg, myCreditScoreImg, nlcbcImg]
 export default function Projects() {
   return (
     <main className="max-w-[1200px] mx-auto px-lg pt-32 pb-xxl">
-      <header className="mb-xxl max-w-3xl">
+      <header className="mb-xxl max-w-[48rem]">
         <h1 className="text-5xl font-headline mb-lg">Selected Projects</h1>
-        <p className="text-lg text-on-surface-variant dark:text-dark-on-surface opacity-70 italic font-headline">
+        <p className="text-lg opacity-70 italic font-serif">
           A curation of digital frameworks, identity systems, and user interfaces designed with
           structural honesty.
         </p>
@@ -31,7 +31,7 @@ export default function Projects() {
                   {project.tag}
                 </span>
                 <h2 className="text-3xl font-headline mt-sm mb-md">{project.title}</h2>
-                <p className="text-on-surface-variant dark:text-dark-on-surface mb-lg max-w-lg leading-relaxed">
+                <p className="text-on-surface-variant dark:text-dark-on-surface mb-lg max-w-[32rem] leading-relaxed">
                   {project.desc}
                 </p>
                 <Link
@@ -47,7 +47,7 @@ export default function Projects() {
                 <Image
                   src={projectImages[i]}
                   alt={project.title}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                 />
               </div>
             </div>

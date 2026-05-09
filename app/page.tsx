@@ -6,7 +6,7 @@ import archImg from "@/public/images/architecture.jpg"
 export default function Home() {
   return (
     <main className="max-w-[1200px] mx-auto px-lg pt-32 pb-xxl">
-      <section className="mb-xxl max-w-4xl">
+      <section className="mb-xxl max-w-[56rem]">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] mb-4 block text-secondary dark:text-dark-primary">
           Software Engineer &amp; Designer
         </span>
@@ -14,7 +14,7 @@ export default function Home() {
           Building minimalist, high-performance systems for{" "}
           <span className="italic font-normal">deep thought</span>.
         </h1>
-        <p className="text-xl md:text-2xl font-body max-w-2xl mb-xl text-on-surface-variant dark:text-dark-on-surface">
+        <p className="text-xl md:text-2xl font-body max-w-[42rem] mb-xl text-on-surface-variant dark:text-dark-on-surface opacity-80">
           I specialize in crafting digital tools that prioritize intentionality over noise. Currently
           building at the intersection of aesthetic rigor and technical performance.
         </p>
@@ -47,7 +47,7 @@ export default function Home() {
               More about my approach <ArrowRight size={14} />
             </Link>
           </div>
-          <div className="aspect-[4/3] overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700 dark:opacity-40">
+          <div className="aspect-[4/3] overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700 opacity-90 dark:opacity-40">
             <Image
               src={archImg}
               alt="Brutalist Architecture"
