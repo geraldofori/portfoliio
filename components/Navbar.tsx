@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Moon, Sun, Menu } from 'lucide-react'
+import { Moon, Sun, Briefcase, User, Mail } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
 import { NAV_ITEMS } from '@/lib/constants'
 
@@ -46,15 +46,28 @@ export function Navbar() {
           </button>
         </div>
 
-        <div className="md:hidden flex items-center gap-4">
+        <div className="md:hidden flex items-center gap-6">
+          {NAV_ITEMS.map((item) => {
+            const isActive = pathname === item.href
+            const Icon = item.label === 'Work' ? Briefcase : item.label === 'About' ? User : Mail
+
+            return (
+              <Link
+                key={`mobile-${item.href}`}
+                href={item.href}
+                className={`${isActive ? 'text-secondary' : 'text-on-surface-variant dark:text-dark-on-surface'}`}
+              >
+                <Icon size={20} />
+              </Link>
+            )
+          })}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="text-on-surface-variant dark:text-dark-on-surface"
+            className="text-on-surface-variant dark:text-dark-on-surface ml-2"
             aria-label="Toggle dark mode"
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          <Menu size={24} className="text-on-surface-variant dark:text-dark-on-surface" />
         </div>
       </div>
     </nav>

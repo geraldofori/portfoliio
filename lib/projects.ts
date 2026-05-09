@@ -30,8 +30,8 @@ export const projects: Project[] = [
   {
     id: 3,
     tag: "Corporate Identity",
-    title: "NLCBC Website",
-    desc: "Designed and developed the official digital presence for the National Laboratory of Cell Biology. A digital home for institutional knowledge leveraging editorial precision and rigid grid structures.",
+    title: "NLCBC",
+    desc: "Designed and developed the official digital presence for the NewLife Community Baptist Church. A digital home for institutional knowledge leveraging editorial precision and rigid grid structures.",
     image: "/images/nlcbc.jpg",
     aspect: "aspect-[16/10]",
     url: "https://www.nlcbcgh.com/",
