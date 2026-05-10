@@ -12,6 +12,8 @@ export function Footer() {
             <a
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-secondary transition-colors text-sm opacity-80"
             >
               {link.label}

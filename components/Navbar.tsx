@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { Moon, Sun, Briefcase, User, Mail } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
 import { NAV_ITEMS } from '@/lib/constants'
+import { Logo } from './Logo'
 
 export function Navbar() {
   const { darkMode, setDarkMode } = useTheme()
@@ -15,9 +16,10 @@ export function Navbar() {
       <div className="max-w-[1200px] mx-auto px-lg py-md flex justify-between items-center">
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tighter text-on-surface dark:text-dark-on-surface"
+          className="group text-on-surface dark:text-dark-on-surface hover:text-secondary dark:hover:text-dark-primary transition-colors flex items-center"
+          aria-label="Home"
         >
-          Gerald  Ofori
+          <Logo className="transition-transform duration-500 group-hover:scale-105" />
         </Link>
 
         <div className="hidden md:flex items-center gap-10">
