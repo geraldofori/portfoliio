@@ -8,7 +8,7 @@ export default function Home() {
     <main className="max-w-[1200px] mx-auto px-lg pt-32 pb-xxl">
       <section className="mb-xxl max-w-[56rem]">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] mb-4 block text-secondary dark:text-dark-primary">
-          Software Engineer &amp; Designer
+          Software Engineer & Architect
         </span>
         <h1 className="text-5xl md:text-7xl font-headline leading-[1.1] mb-xl tracking-tight">
           Building minimalist, high-performance systems for{" "}
