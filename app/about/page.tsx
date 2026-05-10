@@ -1,62 +1,46 @@
-import Image from "next/image"
 import { ArrowRight, CircleDot, BookOpen, Film } from "lucide-react"
-
-const PORTRAIT_URL =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuC7mm7HkXPUWPfHB4AOGav1ZqiN72RkkAKLeG55--O8h0VYkcEfrIFX3WtPwLsRHWVC1B_clMrdlYm0q7oWDbrld3H9b12-4o1IF11ZsbholYLefB2z99_lghZVQYdMJ7a3LELs88dbRdT0CBOVdd8OykMXtmZo7p7qQ6yWj6sfGSzDCdv509eQOKH9yrZiydcFCyqt9-I4FP-NJxO29q6vu1kiSvsTXAQM2PP0GkIErp0XoYA71X2j_WKRuhaLFwBfISQIE9LnPL8"
 
 const philosophies = [
   {
-    title: "Zen Minimalism",
-    desc: "Code is a liability until it is proven an asset. My approach centers on extreme reduction—stripping away complexity until only the essential logic remains.",
+    title: "User-Centric Engineering",
+    desc: "Technology should empower people. I focus on bridging the gap between complex business logic and intuitive interfaces, ensuring that every feature directly enhances the end-user experience.",
   },
   {
-    title: "Performance First",
-    desc: "Architecting modern dashboards and high-availability microservices with a non-negotiable focus on speed and resilience.",
+    title: "Uncompromising Quality",
+    desc: "Application resilience is non-negotiable. I ensure high performance and maintainability through rigorous unit testing, continuous quality monitoring, and thorough peer reviews.",
   },
   {
-    title: "Intellectual Rigor",
-    desc: "Every line of code is a decision. Deep research and structural planning precede any implementation, ensuring long-term maintainability.",
+    title: "Architectural Integrity",
+    desc: "Scalable systems require a strong foundation. I leverage diverse frameworks and cloud infrastructure to design reliable, long-lasting applications from the ground up.",
   },
 ] as const
 
 const focusAreas = [
-  "Distributed Databases",
-  "DevOps Automation",
-  "System Security",
-  "UI/UX Psychology",
+  "Frontend Architecture",
+  "Full-Stack Integration",
+  "Cloud Infrastructure",
+  "Agile Team Leadership",
 ] as const
 
-const pursuits = [
-  { icon: CircleDot, label: "Tactical Geometry (Football)" },
-  { icon: BookOpen, label: "Stoic Philosophy (Reading)" },
-  { icon: Film, label: "Visual Narrative (Anime)" },
+const hobbies = [
+  { icon: CircleDot, label: "Football" },
+  { icon: BookOpen, label: "Reading" },
+  { icon: Film, label: "Anime" },
 ] as const
 
 export default function About() {
   return (
     <main className="pt-32 pb-xxl px-lg">
       <div className="max-w-[800px] mx-auto">
-        <section className="mb-xxl border-b border-outline-variant pb-xxl">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-xl items-end">
-            <div className="md:col-span-7">
-              <span className="text-xs font-semibold uppercase tracking-widest mb-4 block text-secondary dark:text-dark-primary">
-                Software Architect
-              </span>
-              <h1 className="text-6xl font-headline mb-8">Gerald Bosu Ofori.</h1>
-              <p className="text-xl font-body text-on-surface-variant dark:text-dark-on-surface leading-relaxed italic mb-8 opacity-80">
-                Engineering digital frameworks with structural integrity and cinematic precision. I
-                build systems that don&apos;t just function&mdash;they endure.
-              </p>
-            </div>
-            <div className="md:col-span-5 aspect-[4/5] bg-surface-container overflow-hidden rounded-sm">
-              <Image
-                src={PORTRAIT_URL}
-                alt="Gerald Bosu Ofori"
-                width={400}
-                height={500}
-                className="w-full h-full object-cover grayscale brightness-90"
-              />
-            </div>
+        <section className="mb-xxl">
+          <div className="max-w-[48rem]">
+            <span className="text-xs font-semibold uppercase tracking-widest mb-4 block text-secondary dark:text-dark-primary">
+              Software Architect
+            </span>
+            <h1 className="text-6xl font-headline mb-8">Gerald Bosu Ofori.</h1>
+            <p className="text-xl font-body text-on-surface-variant dark:text-dark-on-surface leading-relaxed italic mb-8 opacity-80">
+              A dedicated software engineer with a results-driven mindset. I focus on building robust digital applications and scalable solutions, effectively utilizing my skill set to contribute positively to any professional context I am engaged in.
+            </p>
           </div>
         </section>
 
@@ -102,9 +86,9 @@ export default function About() {
 
             <div className="space-y-4">
               <h2 className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant dark:text-dark-on-surface opacity-60">
-                Extracurricular Pursuits
+                Hobbies
               </h2>
-              {pursuits.map((p) => (
+              {hobbies.map((p) => (
                 <div
                   key={p.label}
                   className="flex items-center gap-4 p-4 border border-outline-variant rounded-sm"
