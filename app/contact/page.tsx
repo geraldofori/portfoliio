@@ -59,6 +59,8 @@ export default function Contact() {
             <Link
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-between p-6 border transition-all hover:bg-secondary/5 hover:border-secondary group border-outline-variant dark:border-[#3d4947]"
             >
               <span className="text-sm font-medium text-on-surface dark:text-dark-on-surface">
