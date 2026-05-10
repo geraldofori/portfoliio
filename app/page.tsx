@@ -11,7 +11,7 @@ export default function Home() {
           Software Engineer & Architect
         </span>
         <h1 className="text-5xl md:text-7xl font-headline leading-[1.1] mb-xl tracking-tight">
-          Building minimalist, high-performance systems for{" "}
+          Building high-performance systems for{" "}
           <span className="italic font-normal">deep thought</span>.
         </h1>
         <p className="text-xl md:text-2xl font-body max-w-[42rem] mb-xl text-on-surface-variant dark:text-dark-on-surface opacity-80">

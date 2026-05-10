@@ -18,7 +18,7 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: "Gerald Ofori — Software Engineer & Architect",
   description:
-    "Building minimalist, high-performance systems for deep thought. Software engineer and architect based in Accra, building globally.",
+    "Building high-performance systems for deep thought. Software engineer and architect based in Accra, building globally.",
 }
 
 export default function RootLayout({
