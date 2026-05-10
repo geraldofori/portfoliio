@@ -1,4 +1,11 @@
+import { Metadata } from "next"
 import { ArrowRight, CircleDot, BookOpen, Film } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn more about Gerald Ofori, a Software Engineer & Architect. Read about my technical philosophy, areas of focus, and hobbies.",
+}
 
 const philosophies = [
   {

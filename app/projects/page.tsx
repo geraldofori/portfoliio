@@ -2,6 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { projects } from "@/lib/projects"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "A curation of digital frameworks, identity systems, and user interfaces designed by Gerald Ofori.",
+}
 
 export default function Projects() {
   return (

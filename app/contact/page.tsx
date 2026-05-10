@@ -10,6 +10,14 @@ const socialLinks = [
   { label: "CV", href: "#" },
 ] as const
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Gerald Ofori. Currently seeking opportunities to build meaningful digital experiences and deliberate design systems.",
+}
+
 export default function Contact() {
   return (
     <main className="max-w-[800px] mx-auto pt-32 pb-xxl px-lg">
